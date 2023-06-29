@@ -24,11 +24,10 @@ a {
     color: inherit;
 }
 
-main {
+main{
     max-width: 1200px;
     margin: 0px auto;
     margin-top: 10em;
-    ;
 }
 
 body {
@@ -63,7 +62,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .menu-icon {
@@ -72,32 +71,25 @@ body {
     cursor: pointer;
 }
 
-.menu-icon__line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin-bottom: 5px;
-}
-
 .menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
-.menu li {
+#menu li {
     margin-right: 20px;
 }
-
-.menu a {
-    color: #fff;
+#menu a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
     text-decoration: none;
-    transition: color 0.3s;
 }
-
-.menu a:hover {
-    color: #ffbf00;
+#menu a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
 }
 
 #contenido {
@@ -179,15 +171,29 @@ p {
     .menu-icon {
         display: flex;
     }
+    #menu li {
+        padding-top: 4px;
+    }
 
     .menu {
         display: none;
         flex-direction: column;
-        align-items: center;
+        animation: lista 400ms linear;
     }
-
+    
+    @keyframes lista{
+        from{
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
     .menu.active {
         display: flex;
+        
     }
 }
 
