@@ -146,6 +146,10 @@ article ul li {
     margin-bottom: 15px;
     font-size: 28px;
 }
+.red-title {
+    color: red !important;
+    background-color: yellow !important;
+}
 
 p {
     font-size: 18px;
