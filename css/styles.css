@@ -146,16 +146,57 @@ article ul li {
     margin-bottom: 15px;
     font-size: 28px;
 }
+/*
 .red-title {
     color: red !important;
     background-color: yellow !important;
 }
-
+*/
 p {
     font-size: 18px;
     text-align: justify;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#efectos{
+    display: block;
+   text-align: center;
+}
+#efectos > h3{
+    font-size: 38px;
+    background: linear-gradient(#af599e,#ca82bc,#2326d3,#3fc9db);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-bottom: 15px;  
+}
+
+.boton{
+    font-size: 18px;
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#efectos > button:hover{
+    border-radius: 20px;
+    box-shadow: -2px -2px 5px black inset;
+    transition: all 500ms linear;
+}
+#agregar-EIDOS{
+    background: linear-gradient(to bottom, #af599e 20%, #ca82bc 80%);
+    color: #fbfbfb;
+    cursor: pointer;
+}
+#agregar-ACCENTURE{
+    background: linear-gradient(to bottom, #2326d3 20%, #3fc9db 80%);
+    color: #fbfbfb;
+    cursor: pointer;
+}
+
+#quitar-fondos{
+    background: linear-gradient(to bottom, #d9d9e0 20%, #1c1d1d 80%);
+    color: #fbfbfb; 
+    cursor: pointer;
 }
 
 .icono {
